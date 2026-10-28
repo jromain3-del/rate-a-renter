@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rate a Renter — Reviews for Renters, Roommates & Landlords</title>
+  <meta name="description" content="Search and share constructive reviews of renters, roommates, and landlords before you sign a rental agreement." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo" data-nav="home" aria-label="Rate a Renter home">
+        <span class="logo-mark" aria-hidden="true">★</span>
+        <span class="logo-text">Rate a Renter</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#/" data-nav="home" class="nav-link">Search</a>
+        <a href="#/write" data-nav="write" class="nav-link">Write a review</a>
+        <a href="#/guidelines" data-nav="guidelines" class="nav-link">Guidelines</a>
+        <a href="#/moderation" data-nav="moderation" class="nav-link nav-mod">Moderation</a>
+      </nav>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" hidden aria-label="Mobile">
+      <a href="#/" data-nav="home">Search</a>
+      <a href="#/write" data-nav="write">Write a review</a>
+      <a href="#/guidelines" data-nav="guidelines">Guidelines</a>
+      <a href="#/moderation" data-nav="moderation">Moderation</a>
+    </nav>
+  </header>
+
+  <div class="demo-banner" role="status">
+    <div class="container">
+      <strong>Demo site</strong> — Reviews sync via Supabase (shared across visitors). Email verification is simulated — nothing is emailed. Ads are placeholders. Not a production public forum.
+    </div>
+  </div>
+
+  <main id="main" class="container">
+    <!-- Views injected by app.js -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Rate a Renter</strong> helps people share constructive rental experiences. Treat others fairly — no harassment or defamation.</p>
+      <p class="footer-meta">Demo · Powered by Supabase · <a href="#/guidelines">Community guidelines</a></p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" hidden role="status" aria-live="polite"></div>
+
+  <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#8249;</button>
+    <img id="lightbox-img" alt="Review photo" />
+    <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">&#8250;</button>
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.8/dist/umd/supabase.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
