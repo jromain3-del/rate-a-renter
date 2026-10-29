@@ -40,6 +40,9 @@ Tables: `profiles`, `reviews`, `review_flags`. The anon key is safe to ship in t
 | `index.html` | Page shell + Supabase JS CDN |
 | `styles.css` | Layout and theme |
 | `app.js` | Routing, Supabase data layer, UI |
+| `favicon.svg` | Star mark icon |
+| `robots.txt` | Crawler rules and sitemap location |
+| `sitemap.xml` | Canonical homepage URL (hash routes are not separate pages) |
 | `README.md` | This file |
 
 ## Limitations

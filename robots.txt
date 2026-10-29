@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jromain3-del.github.io/rate-a-renter/sitemap.xml
